@@ -33,12 +33,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Contact seller
-        function contactSeller() {
-            showToast('Đang kết nối với người bán...', 'info');
-            // Close modal
-            const modal = bootstrap.Modal.getInstance(document.getElementById('specsModal'));
-            modal.hide();
-        }
+       function contactSeller() {
+    // Hiển thị thông báo
+    showToast('Đang chuyển hướng thanh toán...', 'info');
+
+    // Đóng modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById('specsModal'));
+    modal.hide();
+
+    setTimeout(() => {
+        window.location.href = "very.html"; 
+    }, 1500); 
+}
 
         // Toast notification
         function showToast(message, type = 'info') {
@@ -80,3 +86,4 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+       
