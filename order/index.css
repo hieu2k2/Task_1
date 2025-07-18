@@ -273,9 +273,13 @@ body {
 /* Modal Styles */
 
 .modal-header {
-    background-color: var(--primary-color);
-    color: white;
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: white;
+    color: rgb(0, 0, 0);
     border-bottom: none;
+    font-weight: 700;
+    height: 35px;
 }
 
 .modal-header .btn-close {
